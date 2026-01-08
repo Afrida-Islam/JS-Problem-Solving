@@ -60,3 +60,17 @@ function findMax(numbers) {
 }
 const myNumbers = [5, 1, 9, 3];
 console.log(findMax(myNumbers));
+
+// Problem 5: Remove Duplicates from an Array
+
+// Problem 6: Sum of All Numbers in an Array
+function calculateSum(numbers) {
+  let total = 0;
+
+  for (let i = 0; i < numbers.length; i++) {
+    total = total + numbers[i];
+  }
+
+  return total;
+}
+console.log(calculateSum([1, 2, 3, 4]));
