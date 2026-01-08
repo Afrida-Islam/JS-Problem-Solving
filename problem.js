@@ -45,4 +45,18 @@ function isPalindrome(str) {
   }
 }
 console.log(isPalindrome("madam"));
-// console.log(isPalindrome("hello"));
+console.log(isPalindrome("hello"));
+
+// Problem 4: Find the Maximum Number
+function findMax(numbers) {
+  let max = numbers[0];
+  for (let i = 1; i < numbers.length; i++) {
+    if (numbers[i] > max) {
+      max = numbers[i];
+    }
+  }
+
+  return max;
+}
+const myNumbers = [5, 1, 9, 3];
+console.log(findMax(myNumbers));
