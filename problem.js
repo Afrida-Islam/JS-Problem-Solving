@@ -62,6 +62,19 @@ const myNumbers = [5, 1, 9, 3];
 console.log(findMax(myNumbers));
 
 // Problem 5: Remove Duplicates from an Array
+function removeDuplicates(arr) {
+  let unique = [];
+
+  for (let i = 0; i < arr.length; i++) {
+    if (unique.indexOf(arr[i]) === -1) {
+      unique.push(arr[i]);
+    }
+  }
+
+  return unique;
+}
+const numbers = [1, 2, 2, 3, 4, 4];
+console.log(removeDuplicates(numbers));
 
 // Problem 6: Sum of All Numbers in an Array
 function calculateSum(numbers) {
@@ -100,3 +113,31 @@ function capitalizeWords(sentence) {
   return words.join(" ");
 }
 console.log(capitalizeWords("hello world"));
+
+// Problem 9: Find the Factorial of a Number
+function findFactorial(n) {
+  let result = 1;
+
+  for (let i = 1; i <= n; i++) {
+    result = result * i;
+  }
+
+  return result;
+}
+console.log(findFactorial(5));
+
+// Problem 10: PingPong Challenge
+function pingPongChallenge() {
+  for (let i = 1; i <= 20; i++) {
+    if (i % 3 === 0 && i % 5 === 0) {
+      console.log("PingPong");
+    } else if (i % 3 === 0) {
+      console.log("Ping");
+    } else if (i % 5 === 0) {
+      console.log("Pong");
+    } else {
+      console.log(i);
+    }
+  }
+}
+pingPongChallenge();
